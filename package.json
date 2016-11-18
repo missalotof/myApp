@@ -1,0 +1,14 @@
+{
+  "name": "wangxingyu",
+  "version": "1.0.0",
+  "description": "a react example",
+  "main": "webpack.fonfig.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^1.13.3"
+  }
+}
