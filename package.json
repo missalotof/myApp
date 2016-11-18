@@ -2,7 +2,7 @@
   "name": "wangxingyu",
   "version": "1.0.0",
   "description": "a react example",
-  "main": "webpack.fonfig.js",
+  "main": "webpack.config.js",
   "scripts": {
     "test": "test"
   },
