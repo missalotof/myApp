@@ -47,10 +47,7 @@
 	'use strict';
 
 
-	console.log("3333333333333");
-
 	var component = __webpack_require__(1);
-	console.log("2222222222222222222");
 
 
 	document.body.appendChild(component());
@@ -64,7 +61,6 @@
 
 
 	module.exports = function () {
-	    console.log("1111111111111111");
 	    var element = document.createElement('h1');
 
 	    element.innerHTML = "hello world!";
