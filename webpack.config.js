@@ -1,7 +1,7 @@
 var path = require('path');
 
 
-module.exports = {
+var config = {
     entry: [
         'webpack/hot/dev-server',
         'webpack-dev-server/client?http://localhost；8080',
@@ -10,5 +10,13 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'build'),
         filename: 'bundle.js'
+    },
+    module: {
+        loaders: [{
+            test: /\.jsx?$/,
+            loader: 'babel'
+        }]
     }
 };
+
+module.exports = config;

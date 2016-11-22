@@ -1,7 +1,10 @@
-'use strict';
+import React from 'react';
+import Hello from './component.jsx';
+
+main();
 
 
-var component = require('./component.js');
+function main() {
+    React.render(<Hello />, document.getElementById('app'));
+}
 
-
-document.body.appendChild(component());
