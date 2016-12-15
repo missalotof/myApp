@@ -1,0 +1,92 @@
+/*css reset*/
+/*
+CSS书写规范
+　　1.位置属性(position, top, right, z-index, display, float等)
+　　2.大小(width, height, padding, margin)
+　　3.文字系列(font, line-height, letter-spacing, color- text-align等)
+　　4.背景(background, border等)
+　　5.其他(animation, transition等)
+    6.CSS有些属性是可以缩写的，比如padding,margin,font等等，这样精简代码同时又能提高用户的阅读体验。
+    .example{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 14px;
+    font-family: Arial;
+    }
+    ||   ||
+    .example{
+    padding: 2em 1em;
+    font: 14px Arial;
+    }
+    7.去掉小数点前的“0”
+    .example{
+    font-size: 0.8em
+    }
+    ||    ||
+    .example{
+    font-size: .8em
+    }
+*/
+
+
+body{
+    font-size: 14px;
+    font-family: "Tahoma", "Arial", "Helvetica Neue", "Hiragino Sans GB", "Simsun", "sans-self";
+    color: #000;
+    background-image: url("../image/img_body.jpg");
+}
+
+ul{
+    list-style: none;
+}
+
+body, div, ul, li, h1, h2, h3, form, input, p, th, td{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #4f4f4f
+}
+
+a:link{
+    color: #636363;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #636363;
+}
+
+a:hover{
+    color: #636363;
+    text-decoration: none;
+}
+
+a:active{
+    color: #636363;
+}
+
+/*常用的css*/
+
+.fl{
+    float: left;
+}
+
+.fr{
+    float: right;
+}
+
+.clearfix{
+    overflow:auto;
+    _height:1%
+}
+
+.container{
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+}

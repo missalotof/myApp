@@ -57,12 +57,22 @@ var config = {
         filename: 'bundle.js'
     },
     module: {
-        loaders: [{
-            test: /\.js$/,
-            exclude: /(node_modules)|(Reporter)/,
-            loader: 'babel?'+JSON.stringify(babelLoaderQuery),
-        }]
+        loaders: [
+            {
+                test: /\.js$/,
+                exclude: /(node_modules)|(Reporter)/,
+                loader: 'babel?'+JSON.stringify(babelLoaderQuery),
+            },
+            {
+                test: /\.css$/,
+                loader: "style-loader!css-loader",
+            },
+            {
+                test: /\.(png)|(jpg)$/,
+                loader: "url?limit=50000"
+            }
+        ]
     }
 };
 
-module.exports = config
+module.exports = config;
